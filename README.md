@@ -29,12 +29,14 @@ Prerequisites
 Node.js 24+
 pnpm 10+
 ```
+
 ## Installation
 ```
 bash# Clone the repo
 git clone <your-repo-url>
 cd Review-Master-AI
 ```
+
 ## Install dependencies (with Windows native binary support)
 ```
 pnpm install
@@ -51,11 +53,13 @@ Then run rm -rf node_modules && pnpm install
 bash# On Windows (Command Prompt)
 set BASE_PATH=/ && set PORT=3000 && pnpm --filter @workspace/review-pilot dev
 ```
+
 ## On Mac / Linux
 ```
 BASE_PATH=/ PORT=3000 pnpm --filter @workspace/review-pilot dev
 Open http://localhost:3000 in your browser.
 ```
+
 ## Demo Accounts
 RoleEmailPasswordBusiness Ownerriya@glowsalon.comanyAdminadmin@reviewpilot.comany
 Demo business: Glow Salon (owner: Riya Kapoor)
@@ -80,6 +84,3 @@ set BASE_PATH=/ && set PORT=3000 && pnpm --filter @workspace/review-pilot dev
 # Typecheck entire workspace
 pnpm run typecheck
 ```
-
-# Typecheck entire workspace
-pnpm run typecheck
