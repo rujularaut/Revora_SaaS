@@ -1,5 +1,5 @@
 # Revora AI 
-AI-powered Google Review Management SaaS — Frontend Prototype
+AI-powered Google Review Management SaaS 
 
 ## Project Structure
 ```
