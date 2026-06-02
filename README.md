@@ -61,7 +61,7 @@ Open http://localhost:3000 in your browser.
 ```
 
 ## Demo Accounts
-RoleEmailPasswordBusiness Ownerriya@glowsalon.comanyAdminadmin@reviewpilot.comany
+RoleEmailPassword Business Owner riya@glowsalon.comany Admin admin@reviewpilot.comany
 Demo business: Glow Salon (owner: Riya Kapoor)
 
 ## Design System
