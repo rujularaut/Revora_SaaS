@@ -49,7 +49,7 @@ artifacts/review-pilot/src/
 
 - **6-page marketing website**: Landing, How It Works, Features, Who It's For, About, Contact
 - **4 auth pages**: Business login, Admin login, Signup, Forgot password
-- **14 owner dashboard sections**: Overview, Reviews, Locations, AI Replies, Templates, Auto-Reply Rules, Negative Alerts, Google Profile, WhatsApp/SMS, Analytics, Billing, Offers, Settings, Support
+- **14 owner dashboard sections**: Overview, Reviews, Locations, AI Replies, Auto-Reply Rules, Negative Alerts, Google Profile, WhatsApp/SMS, Analytics, Billing, Offers, Settings, Support
 - **15 admin dashboard sections**: Overview, Users, Businesses, Locations, Reviews, Payments, Subscriptions, Offers, AI Usage, WhatsApp Logs, Google Health, Plans, Reports, Support, Settings
 
 ## User preferences

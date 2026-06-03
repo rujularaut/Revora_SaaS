@@ -13,7 +13,6 @@ const onboardingSteps = [
   { label: "Connect Google Business Profile", done: false },
   { label: "Select locations", done: false },
   { label: "Set AI tone", done: true },
-  { label: "Create templates", done: true },
   { label: "Configure auto-reply rules", done: false },
   { label: "Add WhatsApp/SMS number", done: false },
   { label: "Send test approval message", done: false },

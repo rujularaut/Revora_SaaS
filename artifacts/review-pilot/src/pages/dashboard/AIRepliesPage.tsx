@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Bot, RefreshCw, Save } from "lucide-react";
 
 const tones = ["Warm", "Casual", "Formal", "Professional", "Friendly", "Apologetic", "Premium"];
-const languages = ["English", "Hindi", "Hinglish", "Auto-detect review language"];
+const languages = ["English", "Hindi", "Auto-detect review language"];
 
 const sampleReplies: Record<string, string> = {
   Warm: "Thank you so much for your kind words! We're absolutely thrilled you loved your experience at Glow Salon. Our team puts their heart into every service, and hearing this truly makes our day. We can't wait to welcome you back soon!",
@@ -131,7 +131,6 @@ export default function AIRepliesPage() {
           <div className="space-y-2 text-sm">
             <div className="flex justify-between"><span className="text-muted-foreground">AI Tone</span><span className="font-medium text-foreground">{tone}</span></div>
             <div className="flex justify-between"><span className="text-muted-foreground">Language</span><span className="font-medium text-foreground">{language}</span></div>
-            <div className="flex justify-between"><span className="text-muted-foreground">AI Model</span><span className="font-medium text-foreground">Gemini 1.5 Flash</span></div>
             <div className="flex justify-between"><span className="text-muted-foreground">Replies This Month</span><span className="font-medium text-foreground">156</span></div>
           </div>
         </div>

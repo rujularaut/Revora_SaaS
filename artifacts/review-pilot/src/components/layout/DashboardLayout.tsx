@@ -13,7 +13,6 @@ const sidebarItems = [
   { label: "Reviews", href: "/dashboard/reviews", icon: Star },
   { label: "Locations", href: "/dashboard/locations", icon: MapPin },
   { label: "AI Replies", href: "/dashboard/ai-replies", icon: Bot },
-  { label: "Templates", href: "/dashboard/templates", icon: FileText },
   { label: "Auto-Reply Rules", href: "/dashboard/auto-rules", icon: Zap },
   { label: "Negative Alerts", href: "/dashboard/negative-alerts", icon: AlertTriangle },
   { label: "Google Profile", href: "/dashboard/google-profile", icon: Chrome },

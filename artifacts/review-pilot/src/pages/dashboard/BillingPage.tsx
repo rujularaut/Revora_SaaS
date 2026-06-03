@@ -5,15 +5,15 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { CheckCircle, CreditCard, Download, TrendingUp } from "lucide-react";
 
 const plans = [
-  { id: "starter", name: "Starter", priceINR: 499, priceUSD: 9, locations: 1, reviews: "50/mo", templates: "Basic", autoReply: false, analytics: "Basic", current: false },
-  { id: "growth", name: "Growth", priceINR: 999, priceUSD: 19, locations: 3, reviews: "200/mo", templates: "Custom", autoReply: true, analytics: "Standard", current: true },
-  { id: "pro", name: "Pro", priceINR: 1999, priceUSD: 39, locations: 10, reviews: "500/mo", templates: "Advanced", autoReply: true, analytics: "Advanced", current: false },
+  { id: "starter", name: "Starter", priceINR: 499, priceUSD: 9, locations: 1, reviews: "50/mo", autoReply: false, analytics: "Basic", current: false },
+  { id: "growth", name: "Growth", priceINR: 999, priceUSD: 19, locations: 3, reviews: "200/mo", autoReply: true, analytics: "Standard", current: true },
+  { id: "pro", name: "Pro", priceINR: 1999, priceUSD: 39, locations: 10, reviews: "500/mo", autoReply: true, analytics: "Advanced", current: false },
 ];
 
 const planFeatures: Record<string, string[]> = {
-  starter: ["1 location", "50 reviews/month", "Basic templates", "Manual approval only", "Email support"],
-  growth: ["Up to 3 locations", "200 reviews/month", "Custom templates", "Negative review alerts", "Auto-reply rules", "Monthly reports", "WhatsApp support"],
-  pro: ["Up to 10 locations", "500 reviews/month", "Advanced analytics", "Custom templates", "Team access", "Priority support", "API access"],
+  starter: ["1 location", "50 reviews/month", "Manual approval only", "Email support"],
+  growth: ["Up to 3 locations", "200 reviews/month", "Negative review alerts", "Auto-reply rules", "Monthly reports", "WhatsApp support"],
+  pro: ["Up to 10 locations", "500 reviews/month", "Advanced analytics", "Team access", "Priority support", "API access"],
 };
 
 const invoices = [

@@ -6,7 +6,7 @@ import PublicLayout from "@/components/layout/PublicLayout";
 const workflowSteps = [
   { step: 1, icon: Globe, title: "Connect Google Business Profile", desc: "Securely link your Google account using OAuth — no password needed." },
   { step: 2, icon: MapPin, title: "Select Locations", desc: "Choose one or multiple business locations to monitor." },
-  { step: 3, icon: Bot, title: "Choose AI Tone & Templates", desc: "Pick the tone and set up response templates that fit your brand." },
+  { step: 3, icon: Bot, title: "Choose AI Tone", desc: "Pick the tone that fit your brand." },
   { step: 4, icon: MessageSquare, title: "Get Alerts on WhatsApp/SMS", desc: "Receive instant review notifications with AI-drafted replies." },
   { step: 5, icon: CheckCircle, title: "Approve YES / EDIT / SKIP", desc: "Quickly approve, edit, or skip each reply with one tap." },
   { step: 6, icon: Zap, title: "Reply Posts to Google", desc: "Approved replies are automatically posted to your Google listing." },
