@@ -22,7 +22,6 @@ import OverviewPage from "@/pages/dashboard/OverviewPage";
 import ReviewsPage from "@/pages/dashboard/ReviewsPage";
 import LocationsPage from "@/pages/dashboard/LocationsPage";
 import AIRepliesPage from "@/pages/dashboard/AIRepliesPage";
-import AutoRulesPage from "@/pages/dashboard/AutoRulesPage";
 import NegativeAlertsPage from "@/pages/dashboard/NegativeAlertsPage";
 import GoogleProfilePage from "@/pages/dashboard/GoogleProfilePage";
 import WhatsAppPage from "@/pages/dashboard/WhatsAppPage";
@@ -100,9 +99,7 @@ function Router() {
       </Route>
       <Route path="/dashboard/ai-replies">
         {() => <ProtectedDashboard><AIRepliesPage /></ProtectedDashboard>}
-      </Route>
-      <Route path="/dashboard/auto-rules">
-        {() => <ProtectedDashboard><AutoRulesPage /></ProtectedDashboard>}
+      
       </Route>
       <Route path="/dashboard/negative-alerts">
         {() => <ProtectedDashboard><NegativeAlertsPage /></ProtectedDashboard>}
