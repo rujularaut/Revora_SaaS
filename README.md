@@ -1,3 +1,8 @@
+# Project Members 
+1. Rujula Raut
+2. Saanvi Dhote
+3. Ritisha Bobde
+   
 # Revora AI 
 AI-powered Google Review Management SaaS 
 
