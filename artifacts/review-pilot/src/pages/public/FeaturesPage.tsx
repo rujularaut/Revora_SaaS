@@ -12,7 +12,7 @@ const features = [
   { icon: MapPin, title: "Multi-Location Support", desc: "Manage reviews from all your business locations in one unified dashboard. Perfect for chains and franchises.", color: "text-pink-600", bg: "bg-pink-50 dark:bg-pink-950/30" },
   { icon: Globe, title: "Multi-Language Replies", desc: "Generate replies in English, Hindi, Hinglish, or auto-detect the review language for native-feeling responses.", color: "text-cyan-600", bg: "bg-cyan-50 dark:bg-cyan-950/30" },
   { icon: BarChart2, title: "Analytics & Reports", desc: "Track reply rates, rating trends, response times, and location-wise performance with weekly/monthly reports.", color: "text-violet-600", bg: "bg-violet-50 dark:bg-violet-950/30" },
-  { icon: CreditCard, title: "Payment & Subscription Management", desc: "Pay seamlessly via Razorpay (India) or Stripe (International). Manage your plan, invoices, and billing in one place.", color: "text-emerald-600", bg: "bg-emerald-50 dark:bg-emerald-950/30" },
+  { icon: CreditCard, title: "Payment & Subscription Management", desc: "Pay seamlessly via Razorpay. Manage your plan, invoices, and billing in one place.", color: "text-emerald-600", bg: "bg-emerald-50 dark:bg-emerald-950/30" },
   { icon: Tag, title: "Offers & Discount Coupons", desc: "Apply promotional codes to get discounts on monthly or annual plans. Exclusive offers for specific business categories.", color: "text-rose-600", bg: "bg-rose-50 dark:bg-rose-950/30" },
   { icon: Shield, title: "Admin Revenue Dashboard", desc: "Founders get a full-stack admin panel with user management, revenue tracking, AI usage costs, and platform health.", color: "text-slate-600", bg: "bg-slate-50 dark:bg-slate-950/30" },
 ];

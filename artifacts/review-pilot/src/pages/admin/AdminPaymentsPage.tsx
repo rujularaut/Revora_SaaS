@@ -52,7 +52,6 @@ export default function AdminPaymentsPage() {
           <SelectContent>
             <SelectItem value="all">All Providers</SelectItem>
             <SelectItem value="razorpay">Razorpay</SelectItem>
-            <SelectItem value="stripe">Stripe</SelectItem>
           </SelectContent>
         </Select>
         <Button variant="outline" className="gap-2" data-testid="button-export-payments"><Download className="w-4 h-4" /> Export</Button>

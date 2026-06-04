@@ -321,7 +321,7 @@ export interface Payment {
   plan: string;
   amount: string;
   currency: string;
-  provider: "Razorpay" | "Stripe";
+  provider: "Razorpay";
   status: "Paid" | "Failed" | "Refunded" | "Pending";
   offerApplied?: string;
   date: string;
@@ -331,7 +331,6 @@ export interface Payment {
 export const mockPayments: Payment[] = [
   { id: "p1", customerName: "Riya Kapoor", businessName: "Glow Salon", plan: "Growth", amount: "₹999", currency: "INR", provider: "Razorpay", status: "Paid", date: "2025-01-01", nextBilling: "2025-02-01" },
   { id: "p2", customerName: "Sanjay Patel", businessName: "Spice Garden", plan: "Pro", amount: "₹1,999", currency: "INR", provider: "Razorpay", status: "Paid", offerApplied: "DIWALI30", date: "2024-12-15", nextBilling: "2025-01-15" },
-  { id: "p3", customerName: "David Chen", businessName: "FitZone Gym", plan: "Pro", amount: "$39", currency: "USD", provider: "Stripe", status: "Paid", date: "2025-01-05", nextBilling: "2025-02-05" },
   { id: "p4", customerName: "Fatima Al-Hassan", businessName: "Glamour Salon", plan: "Growth", amount: "₹999", currency: "INR", provider: "Razorpay", status: "Failed", date: "2025-01-08", nextBilling: "—" },
   { id: "p5", customerName: "Amrita Sharma", businessName: "Naturals Salon", plan: "Growth", amount: "₹999", currency: "INR", provider: "Razorpay", status: "Paid", offerApplied: "WELCOME50", date: "2024-12-01", nextBilling: "2025-01-01" },
   { id: "p7", customerName: "Rajesh Kumar", businessName: "Royal Hotel", plan: "Pro", amount: "₹1,999", currency: "INR", provider: "Razorpay", status: "Paid", date: "2025-01-03", nextBilling: "2025-02-03" },

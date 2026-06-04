@@ -21,8 +21,6 @@ const invoices = [
 
 export default function BillingPage() {
   const [upgradeOpen, setUpgradeOpen] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState("pro");
-  const [provider, setProvider] = useState("razorpay");
 
   return (
     <div className="space-y-6">
@@ -77,14 +75,17 @@ export default function BillingPage() {
 
       <div className="bg-card border border-card-border rounded-xl p-5 shadow-sm">
         <h3 className="font-semibold text-foreground mb-2">Payment Options</h3>
-        <div className="flex gap-3">
-          <button onClick={() => setProvider("razorpay")} className={`flex-1 p-3 border-2 rounded-xl text-sm font-medium transition-colors ${provider === "razorpay" ? "border-primary bg-primary/5 text-primary" : "border-border text-muted-foreground"}`} data-testid="button-razorpay">
-            Razorpay <span className="block text-xs font-normal mt-0.5">UPI, Cards, Netbanking (India)</span>
-          </button>
-          <button onClick={() => setProvider("stripe")} className={`flex-1 p-3 border-2 rounded-xl text-sm font-medium transition-colors ${provider === "stripe" ? "border-primary bg-primary/5 text-primary" : "border-border text-muted-foreground"}`} data-testid="button-stripe">
-            Stripe <span className="block text-xs font-normal mt-0.5">Cards, Apple Pay (International)</span>
-          </button>
-        </div>
+       <div>
+  <button
+    className="w-full p-3 border-2 border-primary bg-primary/5 text-primary rounded-xl text-sm font-medium"
+    data-testid="button-razorpay"
+  >
+    Razorpay
+    <span className="block text-xs font-normal mt-0.5">
+      UPI, Cards, Netbanking
+    </span>
+  </button>
+</div>
       </div>
 
       <div className="bg-card border border-card-border rounded-xl overflow-hidden shadow-sm">

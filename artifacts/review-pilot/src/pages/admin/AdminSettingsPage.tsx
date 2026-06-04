@@ -81,13 +81,7 @@ export default function AdminSettingsPage() {
               </div>
               <div><Label>Razorpay Key ID</Label><Input placeholder="rzp_live_••••••••••••••" className="mt-1" data-testid="input-razorpay-key" /></div>
             </div>
-            <div className="border border-border rounded-xl p-4">
-              <div className="flex items-center gap-2 mb-3">
-                <Switch defaultChecked data-testid="switch-stripe" />
-                <Label className="text-sm font-semibold">Stripe (International)</Label>
-              </div>
-              <div><Label>Stripe Publishable Key</Label><Input placeholder="pk_live_••••••••••••••" className="mt-1" data-testid="input-stripe-key" /></div>
-            </div>
+            
             <Button onClick={save} data-testid="button-save-payment">{saved ? "Saved!" : "Save Settings"}</Button>
           </div>
         </TabsContent>
