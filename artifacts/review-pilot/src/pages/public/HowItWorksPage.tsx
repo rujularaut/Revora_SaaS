@@ -3,11 +3,11 @@ import { UserPlus, CreditCard, Chrome, MapPin, Bot, Settings, MessageSquare, Che
 
 const steps = [
   { icon: UserPlus, title: "Sign Up", desc: "Create your account with your business name, category, and contact details. Takes under 2 minutes.", badge: "Step 1" },
-  { icon: CreditCard, title: "Choose a Plan", desc: "Select the plan that fits your business — Starter, Growth, or Pro. Start with a free trial.", badge: "Step 2" },
-  { icon: CreditCard, title: "Pay Securely", desc: "Pay using Razorpay (UPI, cards, netbanking) for India or Stripe for international customers. Safe and instant.", badge: "Step 3" },
+  { icon: CreditCard, title: "Choose a Plan", desc: "Select the plan that fits your business — Growth, or Pro. Start with a free trial.", badge: "Step 2" },
+  { icon: CreditCard, title: "Pay Securely", desc: "Pay using Razorpay (UPI, cards, netbanking). Safe and instant.", badge: "Step 3" },
   { icon: Chrome, title: "Connect Google Business Profile", desc: "Click 'Connect Google' and authorize Revora to read and respond to your Google reviews. Secure OAuth only.", badge: "Step 4" },
   { icon: MapPin, title: "Select Locations", desc: "Choose one or multiple business locations from your Google Business Profile. Each location is tracked independently.", badge: "Step 5" },
-  { icon: Bot, title: "Set AI Tone & Templates", desc: "Choose your preferred AI tone (Warm, Formal, Casual, Apologetic, etc.) and set up reply templates for different review types.", badge: "Step 6" },
+  { icon: Bot, title: "Set AI Tone", desc: "Choose your preferred AI tone (Warm, Formal, Casual, Apologetic, etc.)for different review types.", badge: "Step 6" },
   { icon: Settings, title: "Configure Auto-Reply Rules", desc: "Set up smart rules — auto-reply to 5-star reviews, send alerts for negative ones, and block replies with sensitive keywords.", badge: "Step 7" },
   { icon: MessageSquare, title: "Receive WhatsApp / SMS Approvals", desc: "When a review comes in, you'll get a WhatsApp or SMS message with the review and AI-drafted reply. One tap to approve.", badge: "Step 8" },
   { icon: Zap, title: "Replies Post Automatically", desc: "After you approve (YES), the reply is automatically posted to Google — no login required. Your reputation stays protected.", badge: "Step 9" },

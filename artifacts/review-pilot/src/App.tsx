@@ -22,8 +22,6 @@ import OverviewPage from "@/pages/dashboard/OverviewPage";
 import ReviewsPage from "@/pages/dashboard/ReviewsPage";
 import LocationsPage from "@/pages/dashboard/LocationsPage";
 import AIRepliesPage from "@/pages/dashboard/AIRepliesPage";
-import TemplatesPage from "@/pages/dashboard/TemplatesPage";
-import AutoRulesPage from "@/pages/dashboard/AutoRulesPage";
 import NegativeAlertsPage from "@/pages/dashboard/NegativeAlertsPage";
 import GoogleProfilePage from "@/pages/dashboard/GoogleProfilePage";
 import WhatsAppPage from "@/pages/dashboard/WhatsAppPage";
@@ -38,12 +36,10 @@ import AdminOverviewPage from "@/pages/admin/AdminOverviewPage";
 import AdminUsersPage from "@/pages/admin/AdminUsersPage";
 import AdminBusinessesPage from "@/pages/admin/AdminBusinessesPage";
 import AdminLocationsPage from "@/pages/admin/AdminLocationsPage";
-import AdminReviewsPage from "@/pages/admin/AdminReviewsPage";
 import AdminPaymentsPage from "@/pages/admin/AdminPaymentsPage";
 import AdminSubscriptionsPage from "@/pages/admin/AdminSubscriptionsPage";
 import AdminOffersPage from "@/pages/admin/AdminOffersPage";
 import AdminAIUsagePage from "@/pages/admin/AdminAIUsagePage";
-import AdminWhatsAppLogsPage from "@/pages/admin/AdminWhatsAppLogsPage";
 import AdminGoogleHealthPage from "@/pages/admin/AdminGoogleHealthPage";
 import AdminPlansPage from "@/pages/admin/AdminPlansPage";
 import AdminReportsPage from "@/pages/admin/AdminReportsPage";
@@ -101,12 +97,7 @@ function Router() {
       </Route>
       <Route path="/dashboard/ai-replies">
         {() => <ProtectedDashboard><AIRepliesPage /></ProtectedDashboard>}
-      </Route>
-      <Route path="/dashboard/templates">
-        {() => <ProtectedDashboard><TemplatesPage /></ProtectedDashboard>}
-      </Route>
-      <Route path="/dashboard/auto-rules">
-        {() => <ProtectedDashboard><AutoRulesPage /></ProtectedDashboard>}
+      
       </Route>
       <Route path="/dashboard/negative-alerts">
         {() => <ProtectedDashboard><NegativeAlertsPage /></ProtectedDashboard>}
@@ -146,9 +137,7 @@ function Router() {
       <Route path="/admin/locations">
         {() => <ProtectedAdmin><AdminLocationsPage /></ProtectedAdmin>}
       </Route>
-      <Route path="/admin/reviews">
-        {() => <ProtectedAdmin><AdminReviewsPage /></ProtectedAdmin>}
-      </Route>
+     
       <Route path="/admin/payments">
         {() => <ProtectedAdmin><AdminPaymentsPage /></ProtectedAdmin>}
       </Route>
@@ -161,9 +150,7 @@ function Router() {
       <Route path="/admin/ai-usage">
         {() => <ProtectedAdmin><AdminAIUsagePage /></ProtectedAdmin>}
       </Route>
-      <Route path="/admin/whatsapp-logs">
-        {() => <ProtectedAdmin><AdminWhatsAppLogsPage /></ProtectedAdmin>}
-      </Route>
+    
       <Route path="/admin/google-health">
         {() => <ProtectedAdmin><AdminGoogleHealthPage /></ProtectedAdmin>}
       </Route>

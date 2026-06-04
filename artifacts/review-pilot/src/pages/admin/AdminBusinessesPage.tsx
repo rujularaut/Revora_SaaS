@@ -8,13 +8,10 @@ import { Search, MapPin, Star, Eye } from "lucide-react";
 const businesses = [
   { id: "b1", name: "Glow Salon", owner: "Riya Kapoor", category: "Salon", locations: 3, totalReviews: 1102, avgRating: 4.3, plan: "Growth", status: "Active" as const },
   { id: "b2", name: "Spice Garden Restaurant", owner: "Sanjay Patel", category: "Restaurant", locations: 7, totalReviews: 3241, avgRating: 4.5, plan: "Pro", status: "Active" as const },
-  { id: "b3", name: "HealthFirst Clinic", owner: "Meera Iyer", category: "Clinic", locations: 0, totalReviews: 0, avgRating: 0, plan: "Starter", status: "Trial" as const },
   { id: "b4", name: "FitZone Gym", owner: "David Chen", category: "Gym", locations: 12, totalReviews: 7821, avgRating: 4.6, plan: "Pro", status: "Active" as const },
   { id: "b5", name: "Glamour Salon", owner: "Fatima Al-Hassan", category: "Salon", locations: 2, totalReviews: 432, avgRating: 4.2, plan: "Growth", status: "Suspended" as const },
   { id: "b6", name: "Naturals Salon", owner: "Amrita Sharma", category: "Salon", locations: 4, totalReviews: 1890, avgRating: 4.4, plan: "Growth", status: "Active" as const },
-  { id: "b7", name: "Luxe Hotel", owner: "Tom Wilson", category: "Hotel", locations: 0, totalReviews: 0, avgRating: 0, plan: "Starter", status: "Trial" as const },
   { id: "b8", name: "Royal Hotel", owner: "Rajesh Kumar", category: "Hotel", locations: 5, totalReviews: 2431, avgRating: 4.7, plan: "Pro", status: "Active" as const },
-  { id: "b9", name: "Bella Salon", owner: "Maria Garcia", category: "Salon", locations: 1, totalReviews: 89, avgRating: 4.1, plan: "Starter", status: "Trial" as const },
   { id: "b10", name: "CoachingPlus", owner: "Nisha Reddy", category: "Coaching", locations: 0, totalReviews: 0, avgRating: 0, plan: "Pro", status: "Cancelled" as const },
 ];
 

@@ -46,7 +46,6 @@ function ReviewDetailModal({ review, open, onClose }: { review: Review | null; o
                 <Bot className="w-4 h-4 text-primary" />
                 <p className="text-sm font-semibold text-foreground">AI-Generated Reply</p>
                 {review.toneUsed && <StatusBadge status={review.toneUsed} />}
-                {review.templateUsed && <span className="text-xs text-muted-foreground">via {review.templateUsed}</span>}
               </div>
               <Textarea value={editedReply} onChange={e => setEditedReply(e.target.value)} rows={5} className="text-sm" data-testid="textarea-edit-reply" />
             </div>

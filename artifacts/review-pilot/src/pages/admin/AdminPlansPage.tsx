@@ -8,19 +8,14 @@ import { CheckCircle, Edit3, Plus } from "lucide-react";
 
 const plans = [
   {
-    id: "starter", name: "Starter", priceINR: 499, priceUSD: 9, active: true,
-    features: ["1 location", "50 reviews/month", "Basic templates", "WhatsApp approval", "Manual mode only", "Email support"],
-    limits: { locations: 1, reviewsPerMonth: 50, templates: 5, teamMembers: 1, aiCallsPerMonth: 60 }
-  },
-  {
     id: "growth", name: "Growth", priceINR: 999, priceUSD: 19, active: true,
-    features: ["3 locations", "200 reviews/month", "Custom templates", "Negative alerts", "Auto-reply rules", "WhatsApp/SMS", "Monthly reports"],
-    limits: { locations: 3, reviewsPerMonth: 200, templates: 20, teamMembers: 3, aiCallsPerMonth: 250 }
+    features: ["3 locations", "200 reviews/month", "Negative alerts", "Auto-reply rules", "WhatsApp/SMS", "Monthly reports"],
+    limits: { locations: 3, reviewsPerMonth: 200, teamMembers: 3, aiCallsPerMonth: 250 }
   },
   {
     id: "pro", name: "Pro", priceINR: 1999, priceUSD: 39, active: true,
-    features: ["10 locations", "500 reviews/month", "Advanced templates", "Advanced analytics", "Team access", "Priority support", "API access"],
-    limits: { locations: 10, reviewsPerMonth: 500, templates: 100, teamMembers: 10, aiCallsPerMonth: 600 }
+    features: ["10 locations", "500 reviews/month", "Advanced analytics", "Team access", "Priority support", "API access"],
+    limits: { locations: 10, reviewsPerMonth: 500, teamMembers: 10, aiCallsPerMonth: 600 }
   },
 ];
 
@@ -40,7 +35,6 @@ function EditPlanModal({ plan, open, onClose }: { plan: typeof plans[0] | null; 
             <div><Label>Reviews/Month</Label><Input defaultValue={plan.limits.reviewsPerMonth} type="number" className="mt-1" data-testid="input-plan-reviews" /></div>
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <div><Label>Templates</Label><Input defaultValue={plan.limits.templates} type="number" className="mt-1" data-testid="input-plan-templates" /></div>
             <div><Label>AI Calls/Month</Label><Input defaultValue={plan.limits.aiCallsPerMonth} type="number" className="mt-1" data-testid="input-plan-ai-calls" /></div>
           </div>
           <div className="flex gap-2">
@@ -63,7 +57,7 @@ export default function AdminPlansPage() {
         <Button className="gap-2" data-testid="button-create-plan"><Plus className="w-4 h-4" /> Create Plan</Button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {plans.map(plan => (
           <div key={plan.id} className="bg-card border-2 border-card-border rounded-xl p-6 shadow-sm" data-testid={`plan-admin-${plan.id}`}>
             <div className="flex items-center justify-between mb-4">

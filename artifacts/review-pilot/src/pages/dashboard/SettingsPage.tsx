@@ -117,7 +117,7 @@ export default function SettingsPage() {
             <Separator />
             <div className="bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-800 rounded-xl p-4">
               <h4 className="font-semibold text-red-700 dark:text-red-400 mb-2">Danger Zone</h4>
-              <p className="text-sm text-red-600 dark:text-red-400 mb-3">Deleting your account will permanently remove all your data including reviews, templates, and analytics. This action cannot be undone.</p>
+              <p className="text-sm text-red-600 dark:text-red-400 mb-3">Deleting your account will permanently remove all your data including reviews and analytics. This action cannot be undone.</p>
               <Button variant="destructive" className="gap-2" data-testid="button-delete-account"><Trash2 className="w-4 h-4" /> Delete Account</Button>
             </div>
           </div>

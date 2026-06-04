@@ -6,7 +6,7 @@ import PublicLayout from "@/components/layout/PublicLayout";
 const workflowSteps = [
   { step: 1, icon: Globe, title: "Connect Google Business Profile", desc: "Securely link your Google account using OAuth — no password needed." },
   { step: 2, icon: MapPin, title: "Select Locations", desc: "Choose one or multiple business locations to monitor." },
-  { step: 3, icon: Bot, title: "Choose AI Tone & Templates", desc: "Pick the tone and set up response templates that fit your brand." },
+  { step: 3, icon: Bot, title: "Choose AI Tone", desc: "Pick the tone that fit your brand." },
   { step: 4, icon: MessageSquare, title: "Get Alerts on WhatsApp/SMS", desc: "Receive instant review notifications with AI-drafted replies." },
   { step: 5, icon: CheckCircle, title: "Approve YES / EDIT / SKIP", desc: "Quickly approve, edit, or skip each reply with one tap." },
   { step: 6, icon: Zap, title: "Reply Posts to Google", desc: "Approved replies are automatically posted to your Google listing." },
@@ -164,7 +164,7 @@ export default function LandingPage() {
           <div className="bg-gradient-to-br from-primary/5 to-teal-500/5 border border-primary/20 rounded-2xl p-10">
             <TrendingUp className="w-10 h-10 text-primary mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-foreground mb-3">Simple, Affordable Pricing</h2>
-            <p className="text-muted-foreground mb-2">Plans start from <strong className="text-foreground">₹499/month</strong></p>
+            <p className="text-muted-foreground mb-2">Plans start from <strong className="text-foreground">₹999/month</strong></p>
             <p className="text-sm text-muted-foreground mb-6">Full pricing details available after login. No credit card required to start.</p>
             <Link href="/login">
               <Button variant="default" className="gap-2" data-testid="button-view-plans">

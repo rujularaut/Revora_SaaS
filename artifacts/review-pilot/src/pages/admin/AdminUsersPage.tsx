@@ -82,7 +82,6 @@ export default function AdminUsersPage() {
           <SelectTrigger className="w-32" data-testid="select-user-plan"><SelectValue placeholder="Plan" /></SelectTrigger>
           <SelectContent>
             <SelectItem value="all">All Plans</SelectItem>
-            <SelectItem value="starter">Starter</SelectItem>
             <SelectItem value="growth">Growth</SelectItem>
             <SelectItem value="pro">Pro</SelectItem>
           </SelectContent>

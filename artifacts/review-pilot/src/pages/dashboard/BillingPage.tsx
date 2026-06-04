@@ -5,29 +5,22 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { CheckCircle, CreditCard, Download, TrendingUp } from "lucide-react";
 
 const plans = [
-  { id: "starter", name: "Starter", priceINR: 499, priceUSD: 9, locations: 1, reviews: "50/mo", templates: "Basic", autoReply: false, analytics: "Basic", current: false },
-  { id: "growth", name: "Growth", priceINR: 999, priceUSD: 19, locations: 3, reviews: "200/mo", templates: "Custom", autoReply: true, analytics: "Standard", current: true },
-  { id: "pro", name: "Pro", priceINR: 1999, priceUSD: 39, locations: 10, reviews: "500/mo", templates: "Advanced", autoReply: true, analytics: "Advanced", current: false },
+  { id: "growth", name: "Growth", priceINR: 999, priceUSD: 19, locations: 3, reviews: "200/mo", autoReply: true, analytics: "Standard", current: true },
+  { id: "pro", name: "Pro", priceINR: 1999, priceUSD: 39, locations: 10, reviews: "500/mo", autoReply: true, analytics: "Advanced", current: false },
 ];
 
 const planFeatures: Record<string, string[]> = {
-  starter: ["1 location", "50 reviews/month", "Basic templates", "Manual approval only", "Email support"],
-  growth: ["Up to 3 locations", "200 reviews/month", "Custom templates", "Negative review alerts", "Auto-reply rules", "Monthly reports", "WhatsApp support"],
-  pro: ["Up to 10 locations", "500 reviews/month", "Advanced analytics", "Custom templates", "Team access", "Priority support", "API access"],
+  growth: ["Up to 3 locations", "200 reviews/month", "Negative review alerts", "AI Auto Replies", "Monthly reports", "WhatsApp support"],
+  pro: ["Up to 10 locations", "500 reviews/month", "Advanced analytics", "Team access", "Priority support", "API access"],
 };
 
 const invoices = [
   { id: "INV-2025-001", date: "2025-01-01", amount: "₹999", plan: "Growth", status: "Paid" as const },
   { id: "INV-2024-012", date: "2024-12-01", amount: "₹999", plan: "Growth", status: "Paid" as const },
-  { id: "INV-2024-011", date: "2024-11-01", amount: "₹499", plan: "Starter", status: "Paid" as const },
-  { id: "INV-2024-010", date: "2024-10-01", amount: "₹499", plan: "Starter", status: "Paid" as const },
-  { id: "INV-2024-009", date: "2024-09-01", amount: "₹49", plan: "Starter", status: "Paid" as const },
 ];
 
 export default function BillingPage() {
   const [upgradeOpen, setUpgradeOpen] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState("pro");
-  const [provider, setProvider] = useState("razorpay");
 
   return (
     <div className="space-y-6">
@@ -45,13 +38,12 @@ export default function BillingPage() {
             <Button onClick={() => setUpgradeOpen(true)} className="gap-2" data-testid="button-upgrade-plan">
               <TrendingUp className="w-4 h-4" /> Upgrade to Pro
             </Button>
-            <Button variant="outline" data-testid="button-downgrade-plan">Downgrade</Button>
           </div>
         </div>
       </div>
 
       <h3 className="font-semibold text-foreground">Available Plans</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {plans.map(plan => (
           <div key={plan.id} className={`bg-card border-2 rounded-xl p-5 shadow-sm ${plan.current ? "border-primary" : "border-card-border"}`} data-testid={`plan-card-${plan.id}`}>
             {plan.current && <div className="text-xs font-bold text-primary mb-3 uppercase tracking-wide">Current Plan</div>}
@@ -70,9 +62,12 @@ export default function BillingPage() {
               ))}
             </ul>
             {!plan.current && (
-              <Button className="w-full" variant={plan.priceINR > 999 ? "default" : "outline"} data-testid={`button-select-plan-${plan.id}`}>
-                {plan.priceINR > 999 ? "Upgrade to Pro" : "Downgrade"}
-              </Button>
+              <Button
+  className="w-full"
+  variant="default"
+>
+  Upgrade to Pro
+</Button>
             )}
           </div>
         ))}
@@ -80,14 +75,17 @@ export default function BillingPage() {
 
       <div className="bg-card border border-card-border rounded-xl p-5 shadow-sm">
         <h3 className="font-semibold text-foreground mb-2">Payment Options</h3>
-        <div className="flex gap-3">
-          <button onClick={() => setProvider("razorpay")} className={`flex-1 p-3 border-2 rounded-xl text-sm font-medium transition-colors ${provider === "razorpay" ? "border-primary bg-primary/5 text-primary" : "border-border text-muted-foreground"}`} data-testid="button-razorpay">
-            Razorpay <span className="block text-xs font-normal mt-0.5">UPI, Cards, Netbanking (India)</span>
-          </button>
-          <button onClick={() => setProvider("stripe")} className={`flex-1 p-3 border-2 rounded-xl text-sm font-medium transition-colors ${provider === "stripe" ? "border-primary bg-primary/5 text-primary" : "border-border text-muted-foreground"}`} data-testid="button-stripe">
-            Stripe <span className="block text-xs font-normal mt-0.5">Cards, Apple Pay (International)</span>
-          </button>
-        </div>
+       <div>
+  <button
+    className="w-full p-3 border-2 border-primary bg-primary/5 text-primary rounded-xl text-sm font-medium"
+    data-testid="button-razorpay"
+  >
+    Razorpay
+    <span className="block text-xs font-normal mt-0.5">
+      UPI, Cards, Netbanking
+    </span>
+  </button>
+</div>
       </div>
 
       <div className="bg-card border border-card-border rounded-xl overflow-hidden shadow-sm">

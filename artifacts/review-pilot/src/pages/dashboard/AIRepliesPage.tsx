@@ -3,11 +3,31 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Bot, RefreshCw, Save } from "lucide-react";
+import {
+  Bot,
+  RefreshCw,
+  Save,
+  Zap,
+  Shield,
+} from "lucide-react";
 
 const tones = ["Warm", "Casual", "Formal", "Professional", "Friendly", "Apologetic", "Premium"];
-const languages = ["English", "Hindi", "Hinglish", "Auto-detect review language"];
+const languages = ["English", "Auto-detect review language"];
 
+            const modes = [
+  {
+    id: "safe",
+    label: "Safe Mode",
+    desc: "Every reply requires approval.",
+    icon: Shield,
+  },
+  {
+    id: "auto",
+    label: "Auto Mode",
+    desc: "Automatically reply to positive reviews.",
+    icon: Zap,
+  },
+];
 const sampleReplies: Record<string, string> = {
   Warm: "Thank you so much for your kind words! We're absolutely thrilled you loved your experience at Glow Salon. Our team puts their heart into every service, and hearing this truly makes our day. We can't wait to welcome you back soon!",
   Casual: "Hey, thanks for the awesome review! Really glad you had a great time with us. Come back anytime!",
@@ -21,6 +41,7 @@ const sampleReplies: Record<string, string> = {
 export default function AIRepliesPage() {
   const [tone, setTone] = useState("Warm");
   const [language, setLanguage] = useState("English");
+  const [selectedMode, setSelectedMode] = useState("safe");
   const [instructions, setInstructions] = useState("Always thank customers warmly, keep replies short, and mention our business name.");
   const [saved, setSaved] = useState(false);
 
@@ -34,7 +55,36 @@ export default function AIRepliesPage() {
       <div className="space-y-6">
         <div className="bg-card border border-card-border rounded-xl p-5 shadow-sm">
           <h3 className="font-semibold text-foreground mb-4">AI Reply Settings</h3>
+<div className="mb-6">
+  <Label className="mb-2 block">Auto Reply Mode</Label>
 
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    {modes.map((mode) => {
+      const Icon = mode.icon;
+
+      return (
+        <button
+          key={mode.id}
+          onClick={() => setSelectedMode(mode.id)}
+          className={`p-4 rounded-lg border text-left transition-all ${
+            selectedMode === mode.id
+              ? "border-primary bg-primary/5"
+              : "border-border hover:bg-muted"
+          }`}
+        >
+          <div className="flex items-center gap-2 mb-2">
+            <Icon className="w-4 h-4" />
+            <span className="font-medium">{mode.label}</span>
+          </div>
+
+          <p className="text-xs text-muted-foreground">
+            {mode.desc}
+          </p>
+        </button>
+      );
+    })}
+  </div>
+</div>
           <div className="space-y-4">
             <div>
               <Label className="mb-2 block">Default AI Tone</Label>
@@ -131,7 +181,12 @@ export default function AIRepliesPage() {
           <div className="space-y-2 text-sm">
             <div className="flex justify-between"><span className="text-muted-foreground">AI Tone</span><span className="font-medium text-foreground">{tone}</span></div>
             <div className="flex justify-between"><span className="text-muted-foreground">Language</span><span className="font-medium text-foreground">{language}</span></div>
-            <div className="flex justify-between"><span className="text-muted-foreground">AI Model</span><span className="font-medium text-foreground">Gemini 1.5 Flash</span></div>
+            <div className="flex justify-between">
+  <span className="text-muted-foreground">Auto Reply</span>
+  <span className="font-medium text-foreground">
+    {selectedMode === "auto" ? "Enabled" : "Manual Approval"}
+  </span>
+</div>
             <div className="flex justify-between"><span className="text-muted-foreground">Replies This Month</span><span className="font-medium text-foreground">156</span></div>
           </div>
         </div>

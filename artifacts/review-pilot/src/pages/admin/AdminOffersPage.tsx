@@ -39,7 +39,7 @@ function CreateOfferModal({ open, onClose }: { open: boolean; onClose: () => voi
             <Select>
               <SelectTrigger className="mt-1" data-testid="select-offer-plans"><SelectValue placeholder="All Plans" /></SelectTrigger>
               <SelectContent>
-                {["All Plans", "Starter", "Growth", "Pro", "Growth, Pro"].map(p => <SelectItem key={p} value={p}>{p}</SelectItem>)}
+                {["All Plans", "Growth", "Pro", "Growth, Pro"].map(p => <SelectItem key={p} value={p}>{p}</SelectItem>)}
               </SelectContent>
             </Select>
           </div>
