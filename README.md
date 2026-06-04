@@ -1,4 +1,4 @@
-# Project Members 
+# Project Members
 1. Rujula Raut
 2. Saanvi Dhote
 3. Ritisha Bobde
@@ -27,6 +27,17 @@ artifacts/review-pilot/src/
     ├── dashboard/                 # 14 owner dashboard pages
     └── admin/                     # 15 admin dashboard pages
 ```
+## Features
+
+- Google Review Analytics
+- Review Sentiment Tracking
+- AI Generated Review Responses
+- Customer Feedback Dashboard
+- Business Performance Metrics
+- Multi-role Authentication
+- Admin Management Panel
+- Review Monitoring
+- Mock SaaS Environment
 
 ## Getting Started
 Prerequisites
