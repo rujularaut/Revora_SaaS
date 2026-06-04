@@ -3,7 +3,7 @@ import { UserPlus, CreditCard, Chrome, MapPin, Bot, Settings, MessageSquare, Che
 
 const steps = [
   { icon: UserPlus, title: "Sign Up", desc: "Create your account with your business name, category, and contact details. Takes under 2 minutes.", badge: "Step 1" },
-  { icon: CreditCard, title: "Choose a Plan", desc: "Select the plan that fits your business — Starter, Growth, or Pro. Start with a free trial.", badge: "Step 2" },
+  { icon: CreditCard, title: "Choose a Plan", desc: "Select the plan that fits your business — Growth, or Pro. Start with a free trial.", badge: "Step 2" },
   { icon: CreditCard, title: "Pay Securely", desc: "Pay using Razorpay (UPI, cards, netbanking) for India or Stripe for international customers. Safe and instant.", badge: "Step 3" },
   { icon: Chrome, title: "Connect Google Business Profile", desc: "Click 'Connect Google' and authorize Revora to read and respond to your Google reviews. Secure OAuth only.", badge: "Step 4" },
   { icon: MapPin, title: "Select Locations", desc: "Choose one or multiple business locations from your Google Business Profile. Each location is tracked independently.", badge: "Step 5" },

@@ -21,7 +21,6 @@ export default function AdminSubscriptionsPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {[
-          { plan: "Starter", priceINR: 499, priceUSD: 9, count: 312, revenue: "₹1,55,688", color: "bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800" },
           { plan: "Growth", priceINR: 999, priceUSD: 19, count: 438, revenue: "₹4,37,562", color: "bg-indigo-50 dark:bg-indigo-900/20 border-indigo-200 dark:border-indigo-800" },
           { plan: "Pro", priceINR: 1999, priceUSD: 39, count: 89, revenue: "₹1,77,911", color: "bg-purple-50 dark:bg-purple-900/20 border-purple-200 dark:border-purple-800" },
         ].map(p => (

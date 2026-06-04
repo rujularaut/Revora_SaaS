@@ -164,7 +164,7 @@ export default function LandingPage() {
           <div className="bg-gradient-to-br from-primary/5 to-teal-500/5 border border-primary/20 rounded-2xl p-10">
             <TrendingUp className="w-10 h-10 text-primary mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-foreground mb-3">Simple, Affordable Pricing</h2>
-            <p className="text-muted-foreground mb-2">Plans start from <strong className="text-foreground">₹499/month</strong></p>
+            <p className="text-muted-foreground mb-2">Plans start from <strong className="text-foreground">₹999/month</strong></p>
             <p className="text-sm text-muted-foreground mb-6">Full pricing details available after login. No credit card required to start.</p>
             <Link href="/login">
               <Button variant="default" className="gap-2" data-testid="button-view-plans">
