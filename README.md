@@ -80,9 +80,6 @@ Open http://localhost:3000 in your browser.
 RoleEmailPassword Business Owner riya@glowsalon.comany Admin admin@reviewpilot.comany
 Demo business: Glow Salon (owner: Riya Kapoor)
 
-## Design System
-TokenValuePrimaryIndigo — hsl(245 82% 62%)AccentTeal — hsl(175 77% 40%)Sidebar (owner)Dark navy — hsl(230 35% 13%)Sidebar (admin)Violet-600 accents
-
 ## Architecture Notes
 
 No backend — prototype only; all state is in-memory using mock-data.ts
