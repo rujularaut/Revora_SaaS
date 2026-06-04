@@ -36,12 +36,10 @@ import AdminOverviewPage from "@/pages/admin/AdminOverviewPage";
 import AdminUsersPage from "@/pages/admin/AdminUsersPage";
 import AdminBusinessesPage from "@/pages/admin/AdminBusinessesPage";
 import AdminLocationsPage from "@/pages/admin/AdminLocationsPage";
-import AdminReviewsPage from "@/pages/admin/AdminReviewsPage";
 import AdminPaymentsPage from "@/pages/admin/AdminPaymentsPage";
 import AdminSubscriptionsPage from "@/pages/admin/AdminSubscriptionsPage";
 import AdminOffersPage from "@/pages/admin/AdminOffersPage";
 import AdminAIUsagePage from "@/pages/admin/AdminAIUsagePage";
-import AdminWhatsAppLogsPage from "@/pages/admin/AdminWhatsAppLogsPage";
 import AdminGoogleHealthPage from "@/pages/admin/AdminGoogleHealthPage";
 import AdminPlansPage from "@/pages/admin/AdminPlansPage";
 import AdminReportsPage from "@/pages/admin/AdminReportsPage";
@@ -139,9 +137,7 @@ function Router() {
       <Route path="/admin/locations">
         {() => <ProtectedAdmin><AdminLocationsPage /></ProtectedAdmin>}
       </Route>
-      <Route path="/admin/reviews">
-        {() => <ProtectedAdmin><AdminReviewsPage /></ProtectedAdmin>}
-      </Route>
+     
       <Route path="/admin/payments">
         {() => <ProtectedAdmin><AdminPaymentsPage /></ProtectedAdmin>}
       </Route>
@@ -154,9 +150,7 @@ function Router() {
       <Route path="/admin/ai-usage">
         {() => <ProtectedAdmin><AdminAIUsagePage /></ProtectedAdmin>}
       </Route>
-      <Route path="/admin/whatsapp-logs">
-        {() => <ProtectedAdmin><AdminWhatsAppLogsPage /></ProtectedAdmin>}
-      </Route>
+    
       <Route path="/admin/google-health">
         {() => <ProtectedAdmin><AdminGoogleHealthPage /></ProtectedAdmin>}
       </Route>
