@@ -10,11 +10,12 @@ import { Button } from "@/components/ui/button";
 
 const sidebarItems = [
   { label: "Overview", href: "/dashboard", icon: LayoutDashboard },
+    { label: "Google Profile", href: "/dashboard/google-profile", icon: Chrome },
+
   { label: "Reviews", href: "/dashboard/reviews", icon: Star },
   { label: "Locations", href: "/dashboard/locations", icon: MapPin },
   { label: "AI Replies", href: "/dashboard/ai-replies", icon: Bot },
   { label: "Negative Alerts", href: "/dashboard/negative-alerts", icon: AlertTriangle },
-  { label: "Google Profile", href: "/dashboard/google-profile", icon: Chrome },
   { label: "WhatsApp / SMS", href: "/dashboard/whatsapp", icon: MessageSquare },
   { label: "Analytics", href: "/dashboard/analytics", icon: BarChart2 },
   { label: "Billing & Plans", href: "/dashboard/billing", icon: CreditCard },
